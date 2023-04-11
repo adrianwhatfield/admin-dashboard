@@ -22,6 +22,15 @@ body {
     font-family: Barlow, sans-serif;
 }
 
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-photo {
+    border-radius: 50%;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -29,6 +38,37 @@ body {
     color: white;
     grid-area: sidebar;
     padding: 20px;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.white {
+    filter: invert(200%);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .main {
@@ -37,6 +77,8 @@ body {
     grid-template-areas: 
         'projects announcements'
         'projects trending';
+    background-color: #cacaca;
+    grid-gap: 10px;
 }
 
 .projects {
@@ -45,10 +87,19 @@ body {
 
 .announcements {
     grid-area: announcements;
+    background-color: #fafafa;
+    padding: 10px;
 }
 
 .trending {
     grid-area: trending;
+    background-color: #fafafa;
+    padding: 10px;
+}
+
+.card {
+    background-color: #fafafa;
+    padding: 10px;
 }
 
 header {
