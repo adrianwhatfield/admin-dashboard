@@ -3,11 +3,6 @@
     src: url(fonts/Barlow-Regular.ttf);
 }
 
-@font-face {
-    font-family: LilitaOne;
-    src: url(font/LilitaOne-Regular.ttf);
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -17,8 +12,7 @@ body {
         'sidebar main'
         'sidebar footer';
     grid-template-rows: 2fr 5fr 1fr;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 10px;
+    grid-template-columns: 1fr 5fr;
     font-family: Barlow, sans-serif;
 }
 
@@ -38,15 +32,33 @@ img {
     color: white;
     grid-area: sidebar;
     padding: 20px;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: -5px;
+}
+
+.logo {
+    width: 2.7rem;
+    height: 2.7rem;
 }
 
 ul {
     list-style-type: none;
+}
+
+.profile-list, .settings-list {
+    margin-left: -45px;
 }
 
 li {
@@ -77,12 +89,14 @@ li {
     grid-template-areas: 
         'projects announcements'
         'projects trending';
-    background-color: #cacaca;
+    background-color: #dee0df;
     grid-gap: 10px;
+    box-shadow: 0 10px 50px rgb(204, 204, 204) inset;
 }
 
 .projects {
     grid-area: projects;
+    padding: 10px 50px;
 }
 
 .announcements {
@@ -97,9 +111,40 @@ li {
     padding: 10px;
 }
 
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.purple {
+    background-color: #b53e93;
+    border-radius: 10px;
+    box-shadow: 15px 10px 10px rgb(180, 180, 180);
+}
+
 .card {
     background-color: #fafafa;
     padding: 10px;
+    margin: 0 -10px 0 10px;
+    border-radius: 0 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    color: #2e332f;
+}
+
+.card-options {
+    align-self: flex-end;
+}
+
+.card-options > img {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(25%);
+    padding: 0 5px;
 }
 
 header {
