@@ -96,17 +96,22 @@ li {
     background-color: #dee0df;
     grid-gap: 10px;
     box-shadow: 0 10px 50px rgb(204, 204, 204) inset;
+    justify-items: center;
 }
 
 .projects {
     grid-area: projects;
-    padding: 10px 50px;
+    padding: 10px 30px;
+}
+
+.announcements, .trending {
+    min-width: 10%;
+    max-width: 40%;
+    padding: 1rem;
 }
 
 .announcements {
     grid-area: announcements;
-    padding: 10px 100px 10px 10px;
-    max-width: 30%;
 }
 
 .announcements-container {
@@ -130,8 +135,32 @@ li {
 
 .trending {
     grid-area: trending;
+}
+
+.trending-container {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
     background-color: #fafafa;
-    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 7px 10px 10px rgb(180, 180, 180);
+    font-size: 0.75rem;
+    padding: 1rem;
+}
+
+.trending-profile {
+    display: grid;
+    grid-template: auto auto / auto auto;
+}
+
+.trending-profile-photo {
+    border-radius: 100%;
+    grid-row: 1 / span 3;
+    padding: 1rem;
+}
+
+.profile-name.small {
+    font-family: BarlowBold;
+    font-size: 1rem;
 }
 
 .card-container {
