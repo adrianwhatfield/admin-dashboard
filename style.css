@@ -3,6 +3,11 @@
     src: url(fonts/Barlow-Regular.ttf);
 }
 
+@font-face {
+    font-family: BarlowBold;
+    src: url(fonts/Barlow-Bold.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +16,6 @@ body {
         'sidebar header'
         'sidebar main'
         'sidebar footer';
-    grid-template-rows: 2fr 5fr 1fr;
     grid-template-columns: 1fr 5fr;
     font-family: Barlow, sans-serif;
 }
@@ -155,4 +159,86 @@ header {
 
 footer {
     grid-area: footer;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posting-list {
+    display: flex;
+    padding-right: 6rem;
+    gap: 3rem;
+}
+
+.posting-list > li {
+    background-color: #3eb560;
+    color: white;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin: 0 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    max-height: 30px;
+}
+
+.posting-list > li:hover {
+    background-color: #60da83;
+}
+
+.greeting > .small {
+    font-family: BarlowBold;
+}
+
+.greeting > .large {
+    font-size: 1.5rem;
+    font-family: BarlowBold;
+}
+
+.profile-photo.large {
+    height: 175px;
+    width: 175px;
+    padding: 1rem;
+}
+
+.profile.small {
+    justify-content: space-between;
+}
+
+input {
+    background-color: #dee0df;
+    border: none;
+    border-radius: 30px;
+    margin: 1.5rem;
+    width: 60%;
+    height: 40%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.notifications {
+    height: 30px;
+    width: 30px;
+    padding: 1rem;
+}
+
+.profile-photo.small {
+    height: 50px;
+    width: 50px;
+    padding: 1rem;
+}
+
+.container >.profile-name {
+    font-family: BarlowBold;
+    padding: 15px 100px 15px 30px;
 }
