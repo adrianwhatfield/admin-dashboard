@@ -105,8 +105,27 @@ li {
 
 .announcements {
     grid-area: announcements;
+    padding: 10px 100px 10px 10px;
+    max-width: 30%;
+}
+
+.announcements-container {
     background-color: #fafafa;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    border-radius: 1rem;
+    box-shadow: 7px 10px 10px rgb(180, 180, 180);
     padding: 10px;
+}
+
+.announcement {
+    padding: 1rem;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #2e332f;
 }
 
 .trending {
